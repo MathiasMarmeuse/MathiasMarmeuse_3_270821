@@ -1,0 +1,64 @@
+.reserver {
+  &__localisation {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto 0;
+  }
+  &__inputWrapper {
+    background: rgb(233, 233, 233);
+    background: linear-gradient(
+      0deg,
+      rgba(233, 233, 233, 1) 94%,
+      rgba(213, 213, 213, 1) 100%
+    );
+    padding: 15px 0 15px 0;
+  }
+  &__icone {
+    font-size: large;
+  }
+  &__champRecherche {
+    border: 0px;
+    margin-left: 15px;
+    font-weight: 700;
+    color: black;
+    background-color: unset;
+    width: 114px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    text-align: center;
+    padding: 0 10px 0 10px;
+    font-size: large;
+    font-weight: 800;
+  }
+  &__txt {
+    text-align: center;
+    font-size: small;
+    font-weight: normal;
+  }
+  &__info {
+    padding: 0 15px 0 15px;
+  }
+  &__btn {
+    border: 0;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    background: rgb(173, 65, 208);
+    background: linear-gradient(
+      0deg,
+      rgba(173, 65, 208, 1) 0%,
+      rgba(233, 126, 226, 1) 72%
+    );
+    margin-top: 20px;
+  }
+}
+
+::placeholder {
+  font-weight: 700;
+  color: black;
+}

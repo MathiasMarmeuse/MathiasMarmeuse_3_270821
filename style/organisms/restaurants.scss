@@ -1,0 +1,27 @@
+.restaurants {
+  background-color: $lightgrey;
+  padding-bottom: 50px;
+  padding-top: 15px;
+  &__card-container > * {
+    margin: 15px;
+  }
+  &__title {
+    margin: 15px;
+  }
+  @media screen and (min-width: 1440px) {
+    &__card-container {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__card-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+  }
+}

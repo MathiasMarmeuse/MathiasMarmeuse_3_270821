@@ -1,0 +1,72 @@
+.fonctionnement {
+  &__stage {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    height: 50px;
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: small;
+    width: 100%;
+    background-color: $lightgrey;
+    border-radius: 7px;
+    height: 50px;
+    position: relative;
+    left: -13px;
+    &:hover {
+      background-color: rgb(244, 235, 252);
+      .fonctionnement__icone {
+        color: $purple;
+      }
+    }
+  }
+
+  &__number {
+    background-color: $purple;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    font-size: small;
+    z-index: 1;
+  }
+  &__icone {
+    color: grey;
+    margin-left: 10px;
+    margin-left: 25px;
+  }
+
+  &__txt {
+    margin-left: 15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__title {
+      width: 200px;
+      margin: 0 auto 0;
+    }
+    &__stage {
+      max-width: 280px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    &__wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    &__txt {
+      font-size: small;
+    }
+    &__stage {
+      margin: 0 0 15px;
+      width: 33%;
+    }
+  }
+}

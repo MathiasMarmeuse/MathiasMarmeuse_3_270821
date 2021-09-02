@@ -1,0 +1,46 @@
+.card {
+  border-radius: 15px;
+  background-color: white;
+  max-width: 100%;
+  overflow: hidden;
+  box-shadow: 5px 5px 30px #d9d9d9;
+  position: relative;
+
+  &__img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+  }
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 10px;
+  }
+  &__icon {
+    margin-right: 10px;
+    font-size: x-large;
+  }
+  &__new-label {
+    background-color: $mint;
+    color: #0f8a6b;
+    font-weight: 600;
+    width: 70px;
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 30px;
+    &__img {
+      height: 200px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 46%;
+    margin-bottom: 30px;
+  }
+}
