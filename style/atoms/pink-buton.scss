@@ -1,0 +1,14 @@
+.pink-btn {
+  width: 150px;
+  border: 0;
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  background: rgb(173, 65, 208);
+  background: linear-gradient(
+    0deg,
+    rgba(173, 65, 208, 1) 0%,
+    rgba(233, 126, 226, 1) 72%
+  );
+  margin: 20px 0 30px;
+}

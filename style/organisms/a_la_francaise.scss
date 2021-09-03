@@ -1,0 +1,68 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100%;
+
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  &__title {
+    font-family: "Shrikhand", cursive;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__icone {
+    margin-left: 30px;
+  }
+  &__img-container {
+    background-image: url("../images/restaurants/a_l_a_francaise.jpg");
+    width: 100%;
+    height: 200px;
+    background-position: center center;
+    background-size: cover;
+    position: absolute;
+    
+  }
+  &__wrapper {
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 180px;
+    position: relative;
+  }
+  
+  
+  @media screen and (min-width: 426px){
+
+    &__img-container{
+    height: 300px;}
+
+    &__wrapper{
+      margin-top: 280px;
+    }
+  }
+
+  @media screen and (min-width: 1024px){
+
+    &__img-container{
+    height: 400px;}
+
+    &__wrapper{
+      margin-top: 380px;
+    }
+  }
+
+  @media screen and (min-width: 1440px){
+
+    &__img-container{
+    height: 500px;}
+
+    &__wrapper{
+      margin-top: 480px;
+    }
+  }
+}
