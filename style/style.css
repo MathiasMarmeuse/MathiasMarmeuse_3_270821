@@ -25,6 +25,15 @@ p {
 }
 .footer__link {
   margin-bottom: 10px;
+  text-decoration: none;
+}
+.footer__link:visited {
+  text-decoration: none;
+  color: white;
+}
+.footer__link:link {
+  text-decoration: none;
+  color: white;
 }
 .footer__icon {
   margin-right: 10px;
@@ -159,37 +168,45 @@ p {
   flex-direction: column;
   align-items: center;
   min-width: 100%;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
 }
 .menu__title {
   font-family: "Shrikhand", cursive;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
+  margin-left: 15px;
 }
 .menu__icone {
-  margin-left: 30px;
+  margin-left: auto;
+  margin-right: 25px;
+  font-size: x-large;
 }
 .menu__img-container {
   background-image: url("../images/restaurants/a_l_a_francaise.jpg");
   width: 100%;
   height: 200px;
-  background-position: center center;
+  background-position: center;
   background-size: cover;
   position: absolute;
 }
 .menu__wrapper {
   width: 100%;
   background-color: #f0f0f0;
-  border-radius: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-top: 180px;
   position: relative;
 }
-@media screen and (min-width: 426px) {
+.menu__course {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  margin-left: 15px;
+}
+@media screen and (min-width: 425px) {
   .menu__img-container {
     height: 300px;
   }
@@ -197,12 +214,20 @@ p {
     margin-top: 280px;
   }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 880px) {
   .menu__img-container {
     height: 400px;
   }
   .menu__wrapper {
     margin-top: 380px;
+    align-items: center;
+  }
+  .menu__course {
+    align-items: center;
+  }
+  .menu__title {
+    min-width: 450px;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -211,6 +236,56 @@ p {
   }
   .menu__wrapper {
     margin-top: 480px;
+  }
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.course__title {
+  max-width: 40px;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #9c9c9c;
+  border-bottom: solid 2px #99e2d0;
+  font-size: small;
+}
+.course__label {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  padding: 10px;
+}
+.course__dish {
+  font-size: small;
+  width: 319px;
+}
+.course__dish--bold {
+  font-weight: 900;
+}
+.course__price {
+  font-weight: bold;
+  padding-top: 15px;
+}
+@media screen and (min-width: 425px) {
+  .course__dish {
+    margin-right: 180px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .course__dish {
+    margin-right: 480px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .course__dish {
+    margin-right: 80px;
   }
 }
 
@@ -246,6 +321,14 @@ p {
   position: absolute;
   top: 20px;
   right: 15px;
+}
+.card__link {
+  text-decoration: none;
+  color: black;
+}
+.card__link:visited {
+  text-decoration: none;
+  color: black;
 }
 @media screen and (min-width: 1440px) {
   .card {

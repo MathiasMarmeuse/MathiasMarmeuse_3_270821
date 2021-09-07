@@ -31,6 +31,15 @@
     top: 20px;
     right: 15px;
   }
+  &__link{
+    text-decoration: none;
+    color: black;
+    
+  }
+  &__link:visited {
+    text-decoration: none;
+    color: black;
+  }
 
   @media screen and (min-width: 1440px) {
     margin-bottom: 30px;
