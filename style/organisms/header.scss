@@ -8,4 +8,13 @@
     width: fit-content;
     margin: 0 auto 0;
   }
+  &__title--pages {
+    display: flex;
+    align-items: center;
+  }
+  &__title--icone {
+    margin-right: 30px;
+    color: black;
+  }
+  
 }

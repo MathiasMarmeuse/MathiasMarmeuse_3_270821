@@ -4,12 +4,23 @@
   border-radius: 20px;
   padding: 10px;
   color: white;
-  background: rgb(173, 65, 208);
+  
   background: linear-gradient(
     0deg,
     rgba(173, 65, 208, 1) 0%,
     rgba(233, 126, 226, 1) 72%
   );
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.493);
+    transition: box-shadow 0.2s ;
   margin: 20px 0 30px;
- 
+  &:hover{
+    
+    background: linear-gradient(
+      0deg,
+      rgb(182, 97, 211) 0%,
+      rgb(235, 160, 230) 72%
+    );
+   
+    box-shadow: 5px 5px 15px -1px rgb(0, 0, 0);
+  }
 }

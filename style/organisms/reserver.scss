@@ -13,7 +13,9 @@
       rgba(213, 213, 213, 1) 100%
     );
     padding: 15px 0 15px 0;
+    
   }
+  
   &__icone {
     font-size: large;
   }
@@ -29,6 +31,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    
   }
   &__title {
     text-align: center;
@@ -49,14 +52,31 @@
     border-radius: 20px;
     padding: 10px;
     color: white;
-    background: rgb(173, 65, 208);
-    background: linear-gradient(
+     background: linear-gradient(
       0deg,
       rgba(173, 65, 208, 1) 0%,
       rgba(233, 126, 226, 1) 72%
     );
     margin-top: 20px;
     margin-bottom: 20px;
+    
+    box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.493);
+    transition: box-shadow 0.2s ;
+  }
+  &__btn:hover {
+      background: linear-gradient(
+      0deg,
+      rgb(182, 97, 211) 0%,
+      rgb(235, 160, 230) 72%
+    );
+   
+    box-shadow: 5px 5px 15px -1px rgb(0, 0, 0);
+    
+  }
+  @media screen and (min-width: 1024px){ 
+    width: 80%;
+    margin: auto;
+    
   }
 }
 
