@@ -351,8 +351,14 @@ p {
   width: 319px;
   margin-left: 10px;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.course__dish > * {
+  display: block;
   text-overflow: ellipsis;
   overflow: hidden;
+  white-space: nowrap;
 }
 .course__dish--bold {
   font-weight: 900;

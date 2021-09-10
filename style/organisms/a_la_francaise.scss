@@ -159,8 +159,14 @@
     width: 319px;
     margin-left: 10px;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__dish > * {
+    display: block;
     text-overflow: ellipsis;
     overflow: hidden;
+    white-space: nowrap;
   }
   &__dish--bold {
     font-weight: 900;
