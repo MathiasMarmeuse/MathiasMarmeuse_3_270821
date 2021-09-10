@@ -25,6 +25,14 @@ p {
     transform: translateY(0);
   }
 }
+@keyframes check-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .footer {
   background-color: #323232;
   color: #f8f8f8;
@@ -289,9 +297,10 @@ p {
   margin-right: 30px;
   margin-bottom: 10px;
   border-radius: 15px;
-  padding: 10px;
+  height: 50px;
   opacity: 0;
   animation: reveal-label 1s;
+  overflow: hidden;
   animation-fill-mode: forwards;
 }
 .course__label:nth-of-type(2) {
@@ -330,10 +339,20 @@ p {
 .course__label:nth-of-type(13) {
   animation-delay: 1200ms;
 }
+.course__label:hover .course__checkmark, .course__label:focus .course__checkmark {
+  width: 60px;
+}
+.course__label:hover .course__checkmark-icone, .course__label:focus .course__checkmark-icone {
+  animation: check-spin 1s reverse;
+  animation-fill-mode: forwards;
+}
 .course__dish {
   font-size: small;
   width: 319px;
+  margin-left: 10px;
+  white-space: nowrap;
   text-overflow: ellipsis;
+  overflow: hidden;
 }
 .course__dish--bold {
   font-weight: 900;
@@ -341,6 +360,21 @@ p {
 .course__price {
   font-weight: bold;
   padding-top: 15px;
+  margin-right: 10px;
+}
+.course__checkmark {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #99e2d0;
+  height: 100%;
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+.course__checkmark-icone {
+  text-align: center;
+  color: white;
+  font-size: x-large;
+  padding: 10px;
 }
 @media screen and (min-width: 425px) {
   .course__dish {
@@ -497,17 +531,7 @@ p {
   justify-content: center;
   align-items: center;
   animation: hide-loading 0.1s;
-  /*animation-delay: 3.5s;*/
   animation-fill-mode: both;
-}
-.loading__spinner {
-  width: 60px;
-  height: 60px;
-  border: 8px solid #ff79da;
-  border-top-color: #99e2d0;
-  border-radius: 50%;
-  animation: loading-spinner 1s 500ms;
-  animation-iteration-count: 3;
 }
 
 @keyframes loading-spinner {
