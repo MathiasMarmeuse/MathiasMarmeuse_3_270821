@@ -17,16 +17,34 @@
     align-items: center;
     margin: 10px 10px;
   }
+  &__icon-wrapper{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      &:hover .card__icon{
+        opacity: 0;
+      }
+      &:hover .card__icon--full{
+        opacity: 1;
+      }
+  }
   &__icon {
     margin-right: 10px;
     font-size: x-large;
     border-radius: 50%;
     padding: 8px;
-    transition: background-color 2s ;
+    transition: opacity 2s;
+    &--full.fas{
+      position: absolute;
+      left: 0;
+      color: $pink;
+      opacity: 0;
+      transition: opacity 2s;
+    }
+    
   }
-  &__icon:hover{
-background-color: $pink;
-  }
+
   &__new-label {
     background-color: $mint;
     color: #0f8a6b;
@@ -37,10 +55,9 @@ background-color: $pink;
     top: 20px;
     right: 15px;
   }
-  &__link{
+  &__link {
     text-decoration: none;
     color: black;
-    
   }
   &__link:visited {
     text-decoration: none;
